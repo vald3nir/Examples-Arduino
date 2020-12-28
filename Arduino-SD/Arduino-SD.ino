@@ -6,7 +6,7 @@
 #include <SPI.h>
 #include <SD.h>
 
-#define CHIP_SELECT  4
+#define CHIP_SELECT 4
 
 File myFile;
 
@@ -48,8 +48,6 @@ void setup()
       myFile.println(i);
     }
 
-
-
     myFile.close();
     Serial.println("done.");
   }
@@ -57,8 +55,6 @@ void setup()
   {
     Serial.println("error opening test.txt");
   }
-
-
 }
 
 void loop()
